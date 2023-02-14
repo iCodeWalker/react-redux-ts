@@ -45,7 +45,7 @@ const RepositoriesList: React.FC = () => {
       </form>
       {error && <h3>{error}</h3>}
       {loading && <h3>loading....Please wait!</h3>}
-      {!error && !loading && data.map((name) => <div>{name}</div>)}
+      <ul>{!error && !loading && data.map((name) => <li>{name}</li>)}</ul>
     </div>
   );
 };
