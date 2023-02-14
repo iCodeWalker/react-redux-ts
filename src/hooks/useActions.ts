@@ -5,7 +5,7 @@ import { actionCreators } from "../state";
 export const useActions = () => {
     const dispatch = useDispatch();
 
-    return bindActionCreators(actionCreators,dispatch);
+    return bindActionCreators( actionCreators, dispatch);
 }
 
 // bindActionCreators is going to give us back an object that contains all the different
